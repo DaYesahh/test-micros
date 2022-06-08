@@ -1,17 +1,18 @@
 import React from 'react';
-import SideBar from '../sideBar';
 import './index.css';
-import { Outlet } from 'react-router-dom';
-import Container from '../container';
+import { Outlet, useLocation } from 'react-router-dom';
+import Container from '@/pages/home/container';
+import SideBar from '@/pages/home/sideBar';
 
 const Home = () => {
-    const container = document.getElementById("content");
-    console.log(container);
+    const location = useLocation();
+
     return (
         <div className='home'>
             <SideBar />
-            <Container />
-            <Outlet />
+            {
+                location.pathname === "/son1" ? (<Container />) : (<Outlet />)
+            }
         </div>
     );
 };

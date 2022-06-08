@@ -8,17 +8,10 @@ const apps = [
     {
         nameZh: "古典文学",
         name: "micro-son1-app",
-        entry: "//localhost:3001",
-        container: "#content",
-        activeRule: "/son1",
-    },
-    {
-        nameZh: "现代文学",
-        name: "micro-sister-app",
         entry: "//localhost:3002",
         container: "#content",
-        activeRule: "/sister",
-    },
+        activeRule: "/son1",
+    }
 ];
 
 export default apps;

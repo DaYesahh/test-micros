@@ -202,6 +202,10 @@ module.exports = function (webpackEnv) {
     // This means they will be the "root" imports that are included in JS bundle.
     entry: paths.appIndexJs,
     output: {
+        library: 'micro-son1-app',
+        libraryTarget: 'umd',
+        chunkLoadingGlobal: 'webpackJsonp_micro-son1-app',
+        globalObject: 'window',
       // The build folder.
       path: paths.appBuild,
       // Add /* filename */ comments to generated require()s in the output.
@@ -319,6 +323,7 @@ module.exports = function (webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
+        '@': paths.appSrc,
       },
       plugins: [
         // Prevents users from importing files from outside of src/ (or node_modules/).
