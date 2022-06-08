@@ -7,10 +7,10 @@ const apps = [
      */
     {
         nameZh: "古典文学",
-        name: "micro-brother-app",
+        name: "micro-son1-app",
         entry: "//localhost:3001",
         container: "#content",
-        activeRule: "/brother",
+        activeRule: "/son1",
     },
     {
         nameZh: "现代文学",

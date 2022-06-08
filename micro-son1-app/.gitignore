@@ -2,10 +2,6 @@
 
 # dependencies
 /node_modules
-/micro-brother-app/node_modules
-/micro-main-app/node_modules
-/micro-brother-app/build
-/micro-main-app/build
 /.pnp
 .pnp.js
 

@@ -1,8 +1,6 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter, HashRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from './pages/home';
-import Container from './pages/container';
-import { routes } from './routes';
 import Stories from './pages/stories';
 import Xiaoshuo from './pages/xiaoshuo';
 
@@ -17,24 +15,8 @@ export function HistoryRouters() {
                     <Route path="stories" element={<Stories />} />
                     <Route path="xiaoshuo" element={<Xiaoshuo />} />
                 </Route>
-                <Route path="/brother" element={<Home />} />
-                <Route path="/sister" element={<Home />} />
+                <Route path="/son1" element={<Home />} />
             </Routes>
         </BrowserRouter>
     );
 }
-
-// export function HashRouters() {
-//     return (
-//         <HashRouter>
-//             <Routes>
-//                 <Route path="/books" element={<Home />} />
-//                 {
-//                     routes.map((item: any) => (
-//                         <Route path={item.path} element={item.component()} />
-//                     ))
-//                 }
-//             </Routes>
-//         </HashRouter>
-//     );
-// }

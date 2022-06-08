@@ -11,7 +11,7 @@ console.log("GDSgasdgdsagdsagads")
  */
 function render () {
     const root = ReactDOM.createRoot(
-        document.getElementById('brother-root')
+        document.getElementById('son1-root')
       );
       root.render(
         <React.StrictMode>

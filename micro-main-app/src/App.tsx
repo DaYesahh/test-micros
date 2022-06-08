@@ -8,7 +8,7 @@ startQiankun();
 
 function App() {
     return (
-        <div className="host-app">
+        <div className="main-app">
             <HistoryRouters></HistoryRouters>
         </div>
     );
