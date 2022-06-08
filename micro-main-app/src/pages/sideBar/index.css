@@ -1,0 +1,16 @@
+.side-bar {
+    width: 200px;
+    height: 100%;
+    font-size: 16px;
+    text-align: center;
+    /* padding-top: 12px; */
+    border: 1px solid #030303;
+}
+
+.list-item {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    padding: 12px;
+    border-bottom: 1px solid #030303;
+}
