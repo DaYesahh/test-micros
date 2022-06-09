@@ -18,6 +18,7 @@ const SideBar = () => {
                     <Link className='list-item' key={item.name} to={item.activeRule}>{item.nameZh}</Link>
                 ))
             }
+            <div className='adver-insert'>持续征收广告位</div>
         </div>
     );
 };

@@ -5,7 +5,6 @@ const Container = () => {
 
     return (
         <div id='content'>
-            这里是content 
         </div>
     );
 };
