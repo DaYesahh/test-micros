@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import apps from '@/micro/apps';
 import { routes } from '@/routes';
 import { Link } from 'react-router-dom';
 import './index.css';
 
 const SideBar = () => {
+
+    useEffect(() => {
+        console.log("gsssssssss");
+    }, [])
 
     return (
         <div className='side-bar'>

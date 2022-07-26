@@ -2,9 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-
-console.log("GDSgasdgdsagdsagads")
-
+import actions from './shared/actions';
 /**
  * 渲染函数
  * 两种情况：主应用生命周期钩子中运行 / 微应用单独启动时运行
@@ -38,6 +36,10 @@ if (!window.__POWERED_BY_QIANKUN__) {
    */
   export async function mount(props) {
     console.log("ReactMicroApp mount", props);
+    actions.setActions({
+        onGlobalStateChange: props.onGlobalStateChange,
+        setGlobalState: props.setGlobalState,
+    });
     render();
   }
   
